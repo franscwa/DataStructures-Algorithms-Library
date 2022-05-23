@@ -1,0 +1,6 @@
+
+def reverseList(head):
+    if head is None:
+        return
+    reverseList(head.next)
+    print(head.data)

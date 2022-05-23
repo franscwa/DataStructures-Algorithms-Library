@@ -1,0 +1,52 @@
+public reverse a linked list in java
+
+1. Iterate through the list.
+2. For each node, store a reference to the next node in a temporary variable.
+3. Set the current node's next pointer to point to the previous node.
+4. Set the previous node to the current node.
+5. Set the current node to the node stored in the temporary variable.
+6. Repeat steps 2-5 until the end of the list is reached. {
+    
+}
+
+write a function to reverse a LinkedList<> in java
+
+public class LinkedList<T> {
+
+    private Node<T> head;
+
+    public LinkedList() {
+        head = null;
+    }
+
+    public void add(T data) {
+        Node<T> newNode = new Node<T>(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node<T> current = head;
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(newNode);
+        }
+    }
+
+    public void reverse() {
+        if (head == null || head.getNext() == null) {
+            return;
+        }
+
+        Node<T> current = head;
+        Node<T> previous = null;
+        Node<T> next = null;
+
+        while (current != null) {
+            next = current.getNext();
+            current.setNext(previous);
+            previous = current;
+            current = next;
+        }
+        head = previous;
+    }
+}

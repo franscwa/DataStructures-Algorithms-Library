@@ -1,0 +1,36 @@
+
+The greedy algorithm is a simple, efficient algorithm for finding the minimum cost spanning tree of a graph. The algorithm works by starting at the root node and finding the cheapest edge to add to the tree. It then adds the cheapest edge from the newly added node to the tree, and so on until all nodes are in the tree. The cost of the tree is the sum of the costs of the edges in the tree.
+
+To implement the greedy algorithm in Java, we can use a priority queue to keep track of the edges in the graph. We start by adding all of the edges in the graph to the priority queue, with the cost of each edge as the priority. Then, we remove the edge with the lowest cost from the queue and add it to the tree. We continue doing this until there are no more edges in the queue.
+
+The time complexity of the greedy algorithm is O(E log E), where E is the number of edges in the graph. This is because we need to add all of the edges to the priority queue, and then remove them one by one. The space complexity is O(E), because we need to store all of the edges in the priority queue.
+
+The greedy algorithm is a simple, efficient algorithm for finding the shortest path between two nodes in a graph. The algorithm works by starting at the first node and then finding the shortest path to the next node, and so on, until it reaches the final node. The algorithm is called greedy because it always chooses the shortest path, without considering whether or not that path is the best option in the long term.
+
+The algorithm is implemented as follows:
+
+
+
+
+
+1. Start at the first node.
+
+2. Find the shortest path to the next node.
+
+3. Repeat step 2 until you reach the final node.
+
+=========OR=========
+
+1. Sort the given input array in ascending order.
+
+2. Initialize an empty output array.
+
+3. Initialize a variable ‘i’ with 0 (first index of the input array) and a variable ‘j’ with 1 (second index of the input array).
+
+4. Do the following until ‘i’ and ‘j’ exceed the size of the input array:
+
+a. If the element at index ‘i’ in the input array is smaller than or equal to the element at index ‘j’, then add the element at index ‘i’ to the output array and increment ‘i’ by 1.
+
+b. If the element at index ‘i’ in the input array is greater than the element at index ‘j’, then add the element at index ‘j’ to the output array and increment ‘j’ by 1.
+
+5. Return the output array.

@@ -1,0 +1,36 @@
+trie in python.
+
+I am stuck at how to create the method that would return the key with the longest prefix match.
+For example, if I have the key 'abc' and the key 'ab', and I am looking for the longest match of the key 'abcc',
+I would want the method to return 'abc'.
+
+This is what I have so far.
+<code>class TrieNode:
+def __init__(self):
+    #isword and isend are booleans.
+    self.isword = False
+    self.isend = False
+    #The node's children.
+    self.children = {}
+
+def insert(self, word):
+    #If the word is an empty string, we set isend to true and return.
+    if word == "":
+        self.isend = True
+        return
+    #We get the character of the word we want to insert.
+    char = word[0]
+    #If that character isn't in the children dictionary, we add it.
+    if char not in self.children:
+        self.children[char] = TrieNode()
+    #We recurse and insert the rest of the word.
+    self.children[char].insert(word[1:])
+
+def longestPrefix(self, word):
+    if word == "":
+        return ""
+    char = word[0]
+    if char not in self.children:
+        return ""
+    return char + self.children[char].longestPrefix(word[1:])
+</code>

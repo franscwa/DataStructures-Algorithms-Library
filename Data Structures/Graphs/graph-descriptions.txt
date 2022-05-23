@@ -1,0 +1,28 @@
+"""
+
+A dictionary graph is a data structure that uses a dictionary to store edges and vertices. The keys in the dictionary are the vertices, and the values are the edges. The edges are stored as a list of tuples, with each tuple containing the vertex at the other end of the edge and the weight of the edge.
+
+For example, a dictionary graph with four vertices (A, B, C, and D) and six edges (A-B, A-C, B-C, B-D, C-D, and D-A) would look like this:
+
+graph = {
+    'A': [('B', 1), ('C', 2)],
+    'B': [('A', 1), ('C', 3), ('D', 4)],
+    'C': [('A', 2), ('B', 3), ('D', 5)],
+    'D': [('B', 4), ('C', 5), ('A', 6)]
+}
+
+implement a graph data structure with tuples in python
+
+This is one way to implement a graph data structure using tuples in Python:
+
+graph = {}
+
+graph['A'] = ('B', 'C')
+graph['B'] = ('A', 'D')
+graph['C'] = ('A', 'G', 'H')
+graph['D'] = ('B', 'E', 'F')
+graph['E'] = ('D')
+graph['F'] = ('D')
+graph['G'] = ('C')
+graph['H'] = ('C')
+"""

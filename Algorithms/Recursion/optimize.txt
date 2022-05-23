@@ -1,0 +1,10 @@
+show me how to optimize recursive code
+
+There is no one-size-fits-all answer to this question, as the best way to optimize recursive code depends on the specific code in question and the desired outcome. However, some tips on how to optimize recursive code include:
+
+- Finding and eliminating any unnecessary recursive calls
+- Reducing the number of variables used in the recursive function
+- Using memoization to cache previously computed values and avoid recalculating them
+- Parallelizing the recursive function to run on multiple processors
+
+Recursion is a technique for solving problems that can be broken down into smaller, simpler subproblems. It involves breaking a problem down into a smaller version of itself until it becomes trivial to solve. Often, this involves a function calling itself until it reaches a base case, which is a simple problem that can be solved directly.

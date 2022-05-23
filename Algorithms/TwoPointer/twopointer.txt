@@ -1,0 +1,13 @@
+/**
+ * Two pointer is a technique used to efficiently iterate over a data structure while maintaining two separate pointers to elements within that data structure.
+ * 
+ * This technique is often used when iterating over an array or linked list, as it allows for the iteration to occur in a single pass without the need for nested loops.
+ * 
+ * To use the two pointer technique, the first step is to initialize the two pointers to point to the first and last element of the data structure, respectively.
+ * 
+ * Then, the pointers are moved towards each other until they meet in the middle. At each step, the element pointed to by each pointer is processed in some way.
+ * 
+ * Finally, when the pointers meet, the iteration is complete.
+ * 
+ * The two pointer technique can be used to solve a variety of problems, such as finding the sum of all elements in an array or checking for duplicates in a linked list.
+ */
